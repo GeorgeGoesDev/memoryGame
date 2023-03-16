@@ -1,0 +1,50 @@
+.name-input {
+    height: 2rem;
+    font-size: 1.5rem;
+    width: 30%;
+}
+
+.submit-button {
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    font-size: 2rem;
+    padding: 0.2rem;
+    width: 20%;
+    font-weight: 900;
+    background-color: yellow;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.loss-message {
+    font-size: 2rem;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(238, 157, 112)
+}
+
+.congrats,
+.enter-name {
+    font-size: 2rem;
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    color: rgb(238, 157, 112)
+}
+
+.congrats {
+    font-size: 3rem;
+}
+
+.input-and-button-div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13rem;
+}

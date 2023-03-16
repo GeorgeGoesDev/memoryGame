@@ -1,0 +1,23 @@
+.score-board {
+    color: rgb(238, 157, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+* {
+    padding: 0;
+}
+
+.score-item {
+    color: rgb(238, 157, 112);
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    height: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+}

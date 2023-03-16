@@ -1,0 +1,45 @@
+.logo {
+    width: 300px;
+}
+
+.home-main {
+    background-color: rgb(33, 31, 34);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.emo {
+    font-size: 4rem;
+}
+
+.menu-button {
+    margin-top: 2rem;
+    width: 30rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F9D978;
+}
+
+.menu-button:hover {
+    background-color: #ED6C89;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}

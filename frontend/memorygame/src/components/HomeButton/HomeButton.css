@@ -1,0 +1,17 @@
+.back-image {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 8rem;
+    margin-left: 5rem;
+    border-radius: 2px;
+    background-color: #F9D978;
+}
+
+.back-image:hover {
+    cursor: pointer;
+    background-color: #ED6C89;
+}

@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+
+}
+
+.scoretable {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    overflow: scroll;
+
+
+    /* for Microsoft Edge */
+
+}
+
+.scoretable::-webkit-scrollbar {
+    display: none;
+}
+
+.score-line {
+    color: red;
+}
+
+.title {
+    color: rgb(238, 157, 112);
+    margin-top: 8rem;
+    font-size: 3rem;
+}
+
+.scoreitem {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    width: 30%;
+    font-size: 2.5rem;
+    color: rgb(238, 157, 112);
+    display: flex;
+    justify-content: space-between
+}
+
+.rainbow_animated {
+
+    font-weight: bolder;
+    background: linear-gradient(to right, #ff0000, #ffd900, #ff00dd, #aa00ff);
+    color: black;
+    -webkit-background-clip: text;
+    /* Safari/Chrome */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Safari/Chrome */
+    text-fill-color: transparent;
+    animation: rainbow_animation 4s infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}

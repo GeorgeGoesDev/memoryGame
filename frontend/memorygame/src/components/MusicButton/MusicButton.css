@@ -1,0 +1,8 @@
+audio {}
+
+.music-img {
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+    height: 2rem;
+}
