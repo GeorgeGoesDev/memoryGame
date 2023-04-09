@@ -10,7 +10,10 @@ const HighScoreBoard = (props: HighScoreBoardProps) => {
     const [highscores, setHighScores] = useState<{ name: string; score: number; }[]>([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/highscores")
+        fetch("https://us-central1-memorygame-9de72.cloudfunctions.net/app/api/highscores", {
+            mode: 'cors',
+
+        })
             .then((response) => response.json())
             .then((data) => setHighScores(data))
             .catch((error) => console.log(error));
