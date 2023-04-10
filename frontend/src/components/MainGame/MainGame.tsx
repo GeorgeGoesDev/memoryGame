@@ -35,7 +35,7 @@ const MemoryGame = (props: GameProps) => {
 
     const moreCards = (reset: boolean) => {
         if (isMounted && reset) {
-            fetch("https://us-central1-memorygame-9de72.cloudfunctions.net/app/api/images")
+            fetch("https://europe-west1-memorygame-9de72.cloudfunctions.net/app/api/images")
                 .then((response) => response.json())
                 .then((data) => {
                     const newCards: Card[] = [];

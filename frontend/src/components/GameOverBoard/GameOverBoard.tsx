@@ -20,7 +20,7 @@ const GameOverBoard = (props: GameOverBoardProps) => {
             name: inputRef.current?.value,
             score: score
         }
-        await fetch("https://us-central1-memorygame-9de72.cloudfunctions.net/app/api/highscore", {
+        await fetch("https://europe-west1-memorygame-9de72.cloudfunctions.net/app/api/highscore", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(dataToSend),

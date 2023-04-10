@@ -3,20 +3,20 @@ import express from 'express';
 import { getHighScores, setHighScore } from './highscores'
 import { getImages } from './images'
 
-
 const functions = require('firebase-functions')
 
+const cors = require("cors");
 
 const app = express();
 
+
+app.use(cors());
 app.use(express.json());
 
 app.use(express.urlencoded({
     extended: true
 }));
 
-const cors = require("cors");
-app.use(cors());
 
 
 app.get('/', (_, res) => {
@@ -40,4 +40,4 @@ app.get('/api/highscores', async (req, res) => {
     res.send(highscores);
 })
 
-exports.app = functions.https.onRequest(app);
+exports.app = functions.region('europe-west1').https.onRequest(app);

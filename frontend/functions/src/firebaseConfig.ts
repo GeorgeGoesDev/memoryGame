@@ -6,13 +6,13 @@ import { getFirestore } from "firebase/firestore";
 require('dotenv').config()
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB1U9XW3PXkvdKK_YJBnjL-5mCPiGCCwmM",
-    authDomain: "memorygame-9de72.firebaseapp.com",
-    projectId: "memorygame-9de72",
-    storageBucket: "memorygame-9de72.appspot.com",
-    messagingSenderId: "1001318811600",
-    appId: "1:1001318811600:web:a99ba08b1e187e24ca5bd5",
-    measurementId: "G-4Y0D4TZF98"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
 };
 
 // Initialize Firebase
