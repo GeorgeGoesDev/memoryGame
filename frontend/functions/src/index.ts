@@ -6,11 +6,16 @@ import { getImages } from './images'
 const functions = require('firebase-functions')
 
 const cors = require("cors");
+const corsOptions = {
+    origin: '*',
+    credentials: true,
+    optionSuccessStatus: 200,
+}
 
 const app = express();
 
 
-app.use(cors());
+app.use(cors(corsOptions))
 app.use(express.json());
 
 app.use(express.urlencoded({
